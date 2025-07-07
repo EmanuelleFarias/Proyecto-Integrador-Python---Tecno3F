@@ -1,6 +1,7 @@
 
 from random import randint
 import os
+
 tickets = {}
 
 def limpiar_pantalla():
@@ -13,12 +14,11 @@ def mostrar_ticket(ticket):
     print(f'''    
     Su Nombre: {ticket['nombre']}          Nº Ticket: {ticket['numero']}
     Sector: {ticket['sector']}
-   #Asunto: {ticket['asunto']}
+   Asunto: {ticket['asunto']}
 
     Mensaje: {ticket['mensaje']}
        ''')
     print(f'╚{"═" * 58}╝')
-
 
 def alta_ticket():
     while True:
@@ -52,7 +52,6 @@ def alta_ticket():
         if nuevo == 'n':
             print()
             break
-
 
 def leer_ticket():
     while True:
