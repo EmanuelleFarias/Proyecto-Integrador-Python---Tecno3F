@@ -1,4 +1,4 @@
-def mostrar_tablero_amplio(tablero):
+def mostrar_tablero(tablero):
     print()
     print(("+" + "-----")*3 + "+")
     for fila in tablero:
@@ -26,7 +26,7 @@ def jugar_tateti():
     turnos = 0
 
     while True:
-        mostrar_tablero_amplio(tablero)
+        mostrar_tablero(tablero)
         print(f'\nTurno del jugador {jugador}')
         try:
             jugada = int(input('Ingresa tu movimiento: '))
@@ -49,7 +49,7 @@ def jugar_tateti():
             print(f'\n🏆 ¡{jugador} ha ganado!')
             break
         elif turnos == 9:
-            mostrar_tablero_amplio(tablero)
+            mostrar_tablero(tablero)
             print('\n🤝 ¡Empate!')
             break
 
