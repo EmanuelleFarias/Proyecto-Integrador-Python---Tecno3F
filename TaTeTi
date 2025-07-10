@@ -45,7 +45,7 @@ def jugar_tateti():
         turnos += 1
 
         if verificar_victoria(tablero, jugador):
-            mostrar_tablero_amplio(tablero)
+            mostrar_tablero(tablero)
             print(f'\n🏆 ¡{jugador} ha ganado!')
             break
         elif turnos == 9:
